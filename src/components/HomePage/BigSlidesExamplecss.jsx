@@ -1,5 +1,6 @@
 import styled from "styled-components";
-export const Slidecss = styled.div`
+export const 
+Slidecss = styled.div`
   height: 80px;
   width: 350px;
   background-color: white;

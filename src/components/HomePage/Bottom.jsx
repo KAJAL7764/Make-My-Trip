@@ -95,7 +95,7 @@ export const Bottom = ()=>{
         <div><TwitterIcon/></div>
     </div>
     <div className="copy">
-        <p>© 2024 make my trip PVT. LTD.</p>
+        <p>© 2025 make my trip PVT. LTD.</p>
     </div>
 </div>
 </div>

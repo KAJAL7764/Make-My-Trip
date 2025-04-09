@@ -70,44 +70,6 @@ const Style = styled.div`
     line-height: 12px;
   }
 `;
-// export const FareTypes = () => {
-//   return (
-//     <Style>
-//       <div className="div">
-//         <div className="first">Select a fare type</div>
-//         <div className="selectBox">
-//           <input type="radio" />
-//           <p>Regular fees</p>
-//         </div>
-//         <div className="selectBox">
-//           <input type="radio" />
-//           <p>Armed Forces</p>
-//         </div>
-//         <div className="selectBox">
-//           <input type="radio" />
-//           <p>Student fares</p>
-//         </div>
-//         <div className="selectBox">
-//           <input type="radio" />
-//           <p>Senior Citizen</p>
-//         </div>
-//         <div className="selectBox">
-//           <input type="radio" />
-//           <p>Double seat</p>
-//         </div>
-//       </div>
-//       <div className="div2">
-//         <div className="second">Trending Searches:</div>
-//         <div className="selectBox1">
-//           <p>Chennai to Hydrabad</p>
-//         </div>
-//         <div className="selectBox1">
-//           <p>Delhi to Kolkata</p>
-//         </div>
-//       </div>
-//     </Style>
-//   );
-// };
 export const FareTypes = () => {
   return (
     <Style>

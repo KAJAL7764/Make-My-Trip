@@ -1,4 +1,4 @@
-import {Slidecss} from './Slidecss'
+import {Slidecss} from './BigSlidesExamplecss'
 export const Smallslide = ({image,para})=>{
     return <Slidecss>
         <div>

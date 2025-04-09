@@ -4,8 +4,8 @@ import BusinessIcon from "@mui/icons-material/Business";
 import { Icondiv } from "./Icondiv";
 import { Bookingcss } from "./Bookingcss";
 import { Fromto } from "./Fromto";
-import { MultipleSlidesExample, BigSlidesExample } from "./Slidebar";
-import { Bigslide, TripMoney } from "./Slidecss";
+import { MultipleSlidesExample, BigSlidesExample } from "./BigSlidesExample";
+import { Bigslide, TripMoney } from "./BigSlidesExamplecss";
 import { Bottom } from "./Bottom";
 import { Header } from "./Header";
 import { Link } from "react-router-dom";
@@ -13,6 +13,7 @@ import { SmallBottom } from "./SmallBottom";
 import { useState } from "react";
 import { FareTypes } from "./FareTypes";
 import { Login } from "../login/Login";
+import { OffersPage }  from "./OffersPage";
 // import  MiddleHero  from "./MiddleHero";
 export const Main = () => {
   const [data, setData] = useState({
@@ -112,8 +113,11 @@ export const Main = () => {
               <h3>MORE</h3>
             </div>
           </div>
+         
           <BigSlidesExample className="bigslideex"></BigSlidesExample>
         </Bigslide>
+
+        
         <TripMoney>
           <div className="maindiv">
             <div id="div2" style={{ borderColor: "#e47dad" }}>
@@ -155,7 +159,9 @@ export const Main = () => {
           </div>
           {/* <MiddleHero /> */}
         </TripMoney>
+        <OffersPage/>
         <Bottom />
+       
       </div>
     </div>
   );

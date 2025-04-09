@@ -10,7 +10,7 @@ export const Bottomcss = styled.div`
       padding: 0px;
     }
     p {
-      line-height: 3px;
+      line-height: 12px;
       font-size: 13px;
       cursor: pointer;
       color: #444343;
@@ -47,7 +47,7 @@ export const Bottomcss = styled.div`
     p {
       font-size: 13px;
       cursor: pointer;
-      color: #464646;
+      color:rgb(65, 60, 60);
     }
   }
 

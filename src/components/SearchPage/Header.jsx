@@ -11,56 +11,152 @@ import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Login } from "../login/Login";
+// const Icondivcss = styled.div`
+//   .icondiv {
+//     height: 60px;
+//     margin-top: 20px;
+//     width: 100%;
+//     margin: auto;
+//     background-color: white;
+//     display: flex;
+//     flex-direction: row;
+//     position: sticky;
+//     z-index: 100;
+//     text-align: center;
+//     .icons {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: space-around;
+//       width: 60%;
+
+//       p {
+//         padding: 0px;
+//         margin: -6px;
+//         color: #555454;
+//         font-size: 11px;
+//       }
+//       span {
+//         color: #a3a3a3;
+//         cursor: pointer;
+//       }
+//       span:hover {
+//         color: #2db0fc;
+//       }
+//       div:hover {
+//         color: #2db0fc;
+//       }
+//     }
+//   }
+//   .imgdiv {
+//     position: relative;
+//     top: 10px;
+//     left: 0px;
+//     img {
+//       width: 50%;
+//     }
+//   }
+//   .login {
+// position: relative;
+// top: 13px;
+// left: 150px;
+//   }
+// `;
+
+
 const Icondivcss = styled.div`
   .icondiv {
-    height: 60px;
     margin-top: 20px;
     width: 100%;
-    margin: auto;
     background-color: white;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
+    top: 0;
     z-index: 100;
-    text-align: center;
+    padding: 0 10px;
+    flex-wrap: wrap;
+
     .icons {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      flex-wrap: wrap;
       width: 60%;
 
       p {
-        padding: 0px;
         margin: -6px;
         color: #555454;
         font-size: 11px;
       }
+
       span {
         color: #a3a3a3;
         cursor: pointer;
       }
-      span:hover {
-        color: #2db0fc;
-      }
+
+      span:hover,
       div:hover {
         color: #2db0fc;
       }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70px;
+        margin: 5px;
+      }
+    }
+
+    .imgdiv {
+      position: relative;
+      top: 10px;
+
+      img {
+        width: 120px;
+      }
+    }
+
+    .login {
+      position: relative;
+      top: 13px;
+      left: 10px;
     }
   }
-  .imgdiv {
-    position: relative;
-    top: 10px;
-    left: 0px;
-    img {
-      width: 50%;
+
+
+  @media (max-width: 768px) {
+    .icondiv {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+
+      .icons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+
+      .imgdiv {
+        margin-bottom: 10px;
+        img {
+          width: 100px;
+        }
+      }
+
+      .login {
+        margin-top: 10px;
+        position: static;
+      }
     }
-  }
-  .login {
-position: relative;
-top: 13px;
-left: 150px;
   }
 `;
+ 
 
 export const Header = () => {
   const handlePopup = () => {
